@@ -1,0 +1,353 @@
+\documentclass[prd,showpacs,preprint]{revtex4}
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+%\nofiles
+\begin{document}
+\title{Generalized wave equation in uniformly accelerating frame}
+\author{Peifeng Wang}
+\author{Peilei Wang}
+\address{Mijiaqiao 34-1-5, Xi'an, Shaanxi, P. R. China 710075}
+\email{peifeng_w@yahoo.com}
+\begin{abstract}
+Via Rindler's coordinate transformation, wave equation in frame moving at uniform acceleration $a$ along x axis becomes $\frac{\partial^2 \Psi}{\partial x_a^2} + \frac{1}{x_a+\frac{c^2}{a}}\frac{\partial \Psi}{\partial x_a} + \frac{\partial^2 \Psi}{\partial y_a^2} + \frac{\partial^2 \Psi}{\partial z_a^2} - \frac{c^2}{a^2(x_a+\frac{c^2}{a})^2}\frac{\partial^2 \Psi}{\partial t_a^2}=0$. The equation reduces to the normal wave equation when acceleration $a=0$, thus it is a generalization of the normal wave equation. The generalized wave equation is invariant under coordinates transformation of Rindler metric. Several cases are studied with the generalized equation, 1) plane wave propagating along the uniform acceleration is derived, 2) there is a static solution of field of static point charge in uniform accelerating frame, 3) observed from a uniformly accelerating frame, field of freely falling charge is bound to the charge, 4) observed from an inertial frame, field of uniformly accelerating charge is bound to the charge.
+\end{abstract}
+\pacs{41.20.Jb}
+\maketitle
+
+Wave equation is used to describe the dynamics of electromagnetic fields\cite{Jackson}.
+\begin{eqnarray}
+\nabla^2 \Psi-\frac{1}{c^2}\frac{\partial^2 \Psi}{\partial t^2}=f(x,y,z,t)
+\label{eqn:Wave}
+\end{eqnarray}
+However, not everything can be settled, one interesting case is a freely falling charge in gravity field. According to solution via Green's function, a freely falling charge accelerates and radiates thus experiences radiation reaction slowing its falling. On the other hand, equivalence principle states that all objects fall freely in gravity field in identical ways.
+
+Such a difficulty has drawn great interest and has been extensively studied in the problem of radiation reaction or self force. Based on the conservation of energy, equation of motion with self force was derived in \cite{Dirac}. Such a solution suffers from the problems of runaway and preacceleration which were resolved by a technique of reduction of order \cite{Landau}. Later, this derivation was generalized to the problem in curved spacetime\cite{DeWitt}. The idea was further extended to the case for gravity \cite{Mino} and an axiomatic approach for treating the problem in curved spacetime was developed \cite{Quinn}. Subsequently, a mode sum regularization method was introduced \cite{Barack} and a decomposition approach was revealed to identify the radiative part of the field \cite{Detweiler}. Recently, these techniques are used to compute the self force in various cases \cite{Wiseman,Quinn1,Pfenning,Haas,Drasco,Haas1,Shankar,Pound}, in studies on static charge and motion of charge in curved spacetime.
+
+Here, in dealing with field in uniformly accelerating frames, wave equation (\ref{eqn:Wave}) is generalized to incorporate the impact of acceleration. The generalized equation reduces to the wave equation (\ref{eqn:Wave}) when in an inertial frame where acceleration $a=0$. With the generalized wave equation, 1) plane wave propagating along the acceleration is derived, 2) it is shown that static charge in uniformly accelerating frame has a static surrounding field, 3) field around a freely falling charge is bound to the charge, 4) field around a uniformly accelerating charge is bound to the charge, thus no radiation is emitted.
+
+The following discussion involves two kinds of coordinates, 1) coordinates in inertial frame $F_0$,  $(x_0,y_0,z_0,t_0)$, 2) coordinates in frame $F_a$ moving at uniform acceleration $a$, $(x_a,y_a,z_a,t_a)$. Without loss of generality, we assume that the accelertion $a$ is along the x axis. Then Rindler coordinate transformation between frames are
+
+\begin{eqnarray}
+x_0+\frac{c^2}{a}=(x_a+\frac{c^2}{a})cosh(\frac{at}{c})\nonumber\\
+ct_0=(x_a+\frac{c^2}{a})sinh(\frac{at}{c})
+\label{eqn:coordinates0}
+\end{eqnarray}
+\begin{eqnarray}
+x_a+\frac{c^2}{a}=\sqrt{(x_0+\frac{c^2}{a})^2-(ct_0)^2}\nonumber\\
+t_a=\frac{c}{a}artanh(\frac{ct_0}{x_0+\frac{c^2}{a}})
+\label{eqn:coordinates1}
+\end{eqnarray}
+
+As shown in Appendix {\ref{app:Coordinate_Transformation}}
+
+\begin{eqnarray}
+\frac{\partial^2 \Psi}{\partial t_0^2}=&&\frac{\partial^2 \Psi}{\partial x_a^2}\frac{c^4t_0^2}{(x_0+\frac{c^2}{a})^2 - (ct_0)^2} + \frac{\partial^2 \Psi}{\partial x_a\partial t_a}\frac{c^2}{a}\frac{-2c^2t_0(x_0+\frac{c^2}{a})}{((x_0+\frac{c^2}{a})^2-(ct_0)^2)^{3/2}}\nonumber\\
+&& + \frac{\partial \Psi}{\partial x_a}\frac{-c^2(x_0+\frac{c^2}{a})^2}{((x_0+\frac{c^2}{a})^2-(ct_0)^2)^{3/2}} + \frac{\partial^2 \Psi}{\partial t_a^2}(\frac{c}{a})^2(\frac{c(x_0+\frac{c^2}{a})}{(x_0+\frac{c^2}{a})^2-(ct_0)^2})^2\nonumber\\
+&& + \frac{\partial \Psi}{\partial t_a}\frac{c^2}{a}\frac{2(x_0+\frac{c^2}{a})c^2t_0}{((x_0+\frac{c^2}{a})^2-(ct_0)^2)^2}
+\label{eqn:Partial2_Psi_Partial_t2}
+\end{eqnarray}
+
+\begin{eqnarray}
+\frac{\partial^2 \Psi}{\partial x_0^2} =&& \frac{\partial^2 \Psi}{\partial x_a^2}\frac{(x_0+\frac{c^2}{a})^2}{(x_0+\frac{c^2}{a})^2-(ct_0)^2} + \frac{\partial^2 \Psi}{\partial x_a\partial t_a}\frac{c^2}{a}\frac{-2t_0(x_0+\frac{c^2}{a})}{((x_0+\frac{c^2}{a})^2-(ct_0)^2)^{3/2}}\nonumber\\
+&& + \frac{\partial \Psi}{\partial x_a}(\frac{1}{((x_0+\frac{c^2}{a})^2-(ct_0)^2)^{1/2}} + \frac{-(x_0+\frac{c^2}{a})^2}{((x_0+\frac{c^2}{a})^2-(ct_0)^2)^{3/2}})\nonumber\\
+&& + \frac{\partial^2 \Psi}{\partial t_a^2}\frac{c^2}{a^2}\frac{c^2t_0^2}{((x_0+\frac{c^2}{a})^2-(ct_0)^2)^2} + \frac{\partial \Psi}{\partial t_a}\frac{c^2}{a}\frac{2t_0(x_0+\frac{c^2}{a})}{((x_0+\frac{c^2}{a})^2-(ct_0)^2)^2}
+\label{eqn:Partial2_Psi_Partial_x2}
+\end{eqnarray}
+
+With equations (\ref{eqn:Partial2_Psi_Partial_t2}) and (\ref{eqn:Partial2_Psi_Partial_x2}), wave operator becomes
+\begin{eqnarray}
+\frac{\partial^2 \Psi}{\partial x_0^2}+\frac{\partial^2 \Psi}{\partial y_0^2} + \frac{\partial^2 \Psi}{\partial z_0^2} - \frac{1}{c^2}\frac{\partial^2 \Psi}{\partial t_0^2} = \frac{\partial^2 \Psi}{\partial x_a^2} + \frac{1}{x_a+\frac{c^2}{a}}\frac{\partial \Psi}{\partial x_a} + \frac{\partial^2 \Psi}{\partial y_a^2} + \frac{\partial^2 \Psi}{\partial z_a^2} - \frac{c^2}{a^2(x_a+\frac{c^2}{a})^2}\frac{\partial^2 \Psi}{\partial t_a^2}
+\label{eqn:Sint}
+\end{eqnarray}
+
+Thus with coordinate transformation (\ref{eqn:coordinates1}), wave equation (\ref{eqn:Wave}) becomes
+\begin{eqnarray}
+\frac{\partial^2 \Psi}{\partial x_a^2} + \frac{1}{x_a+\frac{c^2}{a}}\frac{\partial \Psi}{\partial x_a} + \frac{\partial^2 \Psi}{\partial y_a^2} + \frac{\partial^2 \Psi}{\partial z_a^2} - \frac{c^2}{a^2(x_a+\frac{c^2}{a})^2}\frac{\partial^2 \Psi}{\partial t_a^2}=f
+\label{eqn:WaveRindler}
+\end{eqnarray}
+or equivalently
+\begin{eqnarray}
+\frac{\partial^2 \Psi}{\partial x_a^2} + \frac{1}{1+\frac{ax_a}{c^2}}\frac{a}{c^2}\frac{\partial \Psi}{\partial x_a} + \frac{\partial^2 \Psi}{\partial y_a^2} + \frac{\partial^2 \Psi}{\partial z_a^2} - \frac{1}{(1+\frac{ax_a}{c^2})^2}\frac{1}{c^2}\frac{\partial^2 \Psi}{\partial t_a^2}=f
+\label{eqn:WaveRindler1}
+\end{eqnarray}
+equation (\ref{eqn:WaveRindler1}) is the generalized wave equation in frame $F_a$ moving at uniform acceleration $a$ along x axis. When $a\to 0$, eqn (\ref{eqn:WaveRindler1}) reduces to the normal wave equation (\ref{eqn:Wave}). Thus, wave equation (\ref{eqn:Wave}) is a special case of eqn. (\ref{eqn:WaveRindler1}) in inertial frame where $a=0$. Since eqn. (\ref{eqn:WaveRindler1}) is derived essentially via a transformation of eqn. (\ref{eqn:Wave}) with Rindler's coordinate, it is invariant under coordinate transformation of Rindler metric, just as wave equation (\ref{eqn:Wave}) is invariant under Lorentz transformation. Eqn. (\ref{eqn:WaveRindler1}) is applicable to the potential of electric and magnetic fields, and its anisotropy is due to the special direction defined by the uniform acceleration $a$.
+
+While wave equation (\ref{eqn:Wave}) is used to compute field in inertial frame $F_0$, the generalized equation (\ref{eqn:WaveRindler}) or (\ref{eqn:WaveRindler1}) shall be used instead of eqn. (\ref{eqn:Wave}) in computing field in frame $F_a$ moving at uniform acceleration $a$ along x axis. Following are applications of the generalized wave equation in several cases.
+
+First, for plane wave propagating along the uniform acceleration $a$(x axis) in free space, equation (\ref{eqn:WaveRindler}) becomes
+\begin{eqnarray}
+\frac{\partial^2 \Psi}{\partial x_a^2} + \frac{1}{x_a+\frac{c^2}{a}}\frac{\partial \Psi}{\partial x_a} - \frac{c^2}{a^2(x_a+\frac{c^2}{a})^2}\frac{\partial^2 \Psi}{\partial t_a^2}=0
+\label{eqn:WaveRindler_Plane_Wave}
+\end{eqnarray}
+it can be verified that for function $\phi$, the following $\Psi$ is solution to eqn. (\ref{eqn:WaveRindler_Plane_Wave})
+\begin{eqnarray}
+\Psi=\phi(\frac{c^2}{a}ln(1+\frac{ax_a}{c^2}) \pm ct_a)
+\label{eqn:Psi_Plane_Wave}
+\end{eqnarray}
+eqn. (\ref{eqn:Psi_Plane_Wave}) is the generalized plane wave propagating along the acceleration, in frame moving at uniform accelertion $a$ along x axis. With simple calculus,
+\begin{eqnarray}
+\lim_{a\to 0}\Psi=\lim_{a\to 0}\phi(\frac{c^2}{a}ln(1+\frac{ax_a}{c^2}) \pm ct_a)=\phi(x_a\pm ct_a)
+\label{eqn:Psi_Plane_Wave_Inertial}
+\end{eqnarray}
+that is, the generalized plane wave (\ref{eqn:Psi_Plane_Wave}) reduces to the normal propagating plane wave when in inertial frame where $a=0$.
+
+Secondly, with a pair of static point source located at $(0,0,0)$ and $(-\frac{2c^2}{a},0,0)$ in a uniformly accelerating frame, the generalized wave equation for a static field becomes
+\begin{eqnarray}
+\frac{\partial^2 \Psi}{\partial x_a^2} + \frac{1}{x_a+\frac{c^2}{a}}\frac{\partial \Psi}{\partial x_a} + \frac{\partial^2 \Psi}{\partial y_a^2} + \frac{\partial^2 \Psi}{\partial z_a^2} =\delta(x_a,y_a,z_a)+\delta(x_a+\frac{2c^2}{a},y_a,z_a)
+\label{eqn:Wave_Static}
+\end{eqnarray}
+
+It can be verified that (Appendix \ref{app:Psi_Static})
+\begin{eqnarray}
+\Psi= \frac{2c^2}{a}\frac{1}{\sqrt{x_a^2+y_a^2+z_a^2}\sqrt{(x_a+\frac{2c^2}{a})^2+y_a^2+z_a^2}}
+\label{eqn:Psi_Static}
+\end{eqnarray}
+is a static solution of eqn. (\ref{eqn:Wave_Static}). Since Rindler's transformation is valid only in the region $x_a>-\frac{c^2}{a}$, within the valid region, eqn. (\ref{eqn:Psi_Static}) is the static field of one single point source at (0,0,0) in uniformly accelerating frame. When in inertial frame where $a=0$, eqn. (\ref{eqn:Psi_Static}) reduces to $1/\sqrt{x_a^2+y_a^2+z_a^2}$, in agreement with the field of point source in inertial frame.
+
+Thirdly, in a uniformly accelerating frame $F_a$, the trajectory of a freely falling charge is
+\begin{eqnarray}
+(x_a+\frac{c^2}{a})cosh(\frac{at_a}{c})-\frac{c^2}{a}=0,
+y_a=0,
+z_a=0
+\label{eqn:Trajectory}
+\end{eqnarray}
+
+Then the generalized wave equation for a freely falling charge is
+\begin{eqnarray}
+\frac{\partial^2 \Psi}{\partial x_a^2} + \frac{1}{x_a+\frac{c^2}{a}}\frac{\partial \Psi}{\partial x_a} + \frac{\partial^2 \Psi}{\partial y_a^2} + \frac{\partial^2 \Psi}{\partial z_a^2} - \frac{c^2}{a^2(x_a+\frac{c^2}{a})^2}\frac{\partial^2 \Psi}{\partial t_a^2}\nonumber\\
+=\delta((x_a+\frac{c^2}{a})cosh(\frac{at_a}{c})-\frac{c^2}{a},y_a,z_a)
+\label{eqn:Wave_Free_Fall}
+\end{eqnarray}
+
+The solution to eqn. (\ref{eqn:Wave_Free_Fall}) is (Appendix \ref{app:Psi_Free_Fall})
+\begin{eqnarray}
+\Psi=\frac{1}{\sqrt{((x_a+\frac{c^2}{a})cosh(\frac{at_a}{c})-\frac{c^2}{a})^2+y_a^2+z_a^2}}
+\label{eqn:Psi_Free_Fall}
+\end{eqnarray}
+
+Equations (\ref{eqn:Trajectory}) - (\ref{eqn:Psi_Free_Fall}) can reduce to the corresponding inertial result when $a\to 0$. Though $\Psi$ in (\ref{eqn:Psi_Free_Fall}) is a varying field, it is essentially a static field $1/\sqrt{x^2+y^2+z^2}$ around a moving center whose trajectory is defined by eqn. (\ref{eqn:Trajectory}), thus $\Psi$ in (\ref{eqn:Psi_Free_Fall}) is bound to the source.
+
+More generally, varying fields may arise in two scenarios. 1) Propagating wave in the form of $\Psi=\psi(\mathbf{x}\pm ct)$ as in eqn. (\ref{eqn:Psi_Plane_Wave_Inertial}) is a radiative field. 2) Bound fields of a moving source in certain trajectory $T(\mathbf{x},t)=0$ can be written as $\Psi=\psi(T(\mathbf{x},t))$. One such example is field of a freely falling charge in eqn. (\ref{eqn:Psi_Free_Fall}).
+
+At a first glance, the above two scenarios have some similarities, as radiative field in the form of $\Psi=\psi(\mathbf{x}\pm ct)$ appears as a special case of the second scenario when $T(\mathbf{x},t)=\mathbf{x}\pm ct$. However, no source can move at the speed of light, thus $T(\mathbf{x},t)=\mathbf{x}\pm ct=0$ does not specify a valid trajectory of any source, hence there is clear difference between the two scenarios.
+
+In the case of propagating wave, the field always propagates at the speed of light regardless of the observing frame. Since Green's function represents fields traveling at the speed of light c, propagating wave can be computed via Green's function,
+
+In the case of freely falling charge, the field moves along with the source so $\Psi$ appears time varying. However, there exists some frame in which the source is at rest and the field appears static and bound to the source. Because the retarded and advanced wave travel at the speed of light in all frames, they are radiative fields and can not be bound to a source. Thus Green's function can not account for the bound fields around a moving source.
+
+The bound field of a freely falling charge in eqn. (\ref{eqn:Psi_Free_Fall}) radiates no power, which disagrees with the Larmor's formula for computing the power radiated from an accelerating charge. \cite{Jackson}
+\begin{eqnarray}
+P=\frac{2}{3}\frac{e^2}{c^3}|\dot v|^2
+\label{eqn:Larmor}
+\end{eqnarray}
+The discrepancy arises as Larmor's rule is based on wave equation (\ref{eqn:Wave}) applicable in inertial frame, while eqn. (\ref{eqn:Psi_Free_Fall}) comes from the generalized wave equation (\ref{eqn:WaveRindler}) suitable in uniformly accelerating frame. A freely falling charge shall be considered in a context of uniform gravity/uniformly accelerating frame with equation (\ref{eqn:WaveRindler}). In addition, Larmor's formula depends on Green's function. As pointed out before, Green's function can only deal with radiative fields traveling at the speed of light, when applied to a freely falling charge, it imporperly takes the bound field around the charge as radiative field.
+
+In the forth case, a uniformly accelerating charge is studied. Observed from an inertial frame, the trajectory of a uniformly accelerating charge is
+\begin{eqnarray}
+\sqrt{(x_0+\frac{c^2}{a})^2-(ct_0)^2}-\frac{c^2}{a}=0,y_0=0,z_0=0
+\label{eqn:Trajectory_Accelerating}
+\end{eqnarray}
+
+It can be verified that (Appendix \ref{app:Psi_Accelerating})
+\begin{eqnarray}
+\Psi=\frac{\frac{2c^2}{a}}{\sqrt{(\sqrt{(x_0+\frac{c^2}{a})^2-(ct_0)^2}-\frac{c^2}{a})^2+y_0^2+z_0^2}\sqrt{(\sqrt{(x_0+\frac{c^2}{a})^2-(ct_0)^2}+\frac{c^2}{a})^2+y_0^2+z_0^2}}
+\label{eqn:Psi_Accelerating}
+\end{eqnarray}
+is a solution of
+\begin{eqnarray}
+\nabla^2\Psi-\frac{1}{c^2}\frac{\partial^2 \Psi}{\partial t_0^2}=\delta(\sqrt{(x_0+\frac{c^2}{a})^2-(ct_0)^2}-\frac{c^2}{a},y_0,z_0)\nonumber\\
++\delta(\sqrt{(x_0+\frac{c^2}{a})^2-(ct_0)^2}+\frac{c^2}{a},y_0,z_0)
+\label{eqn:Wave_Accelerating1}
+\end{eqnarray}
+without loss of generality, assuming $a>0$, $\sqrt{(x_0+\frac{c^2}{a})^2-(ct_0)^2}+\frac{c^2}{a}>0$, then the second term of the right hand side of eqn. (\ref{eqn:Wave_Accelerating1}) vanishes. Thus eqn. (\ref{eqn:Psi_Accelerating}) is a solution of
+\begin{eqnarray}
+\nabla^2\Psi-\frac{1}{c^2}\frac{\partial^2 \Psi}{\partial t_0^2}=\delta(\sqrt{(x_0+\frac{c^2}{a})^2-(ct_0)^2}-\frac{c^2}{a},y_0,z_0)
+\label{eqn:Wave_Accelerating}
+\end{eqnarray}
+the right hand side of eqn. (\ref{eqn:Wave_Accelerating}) represents a point source moving along trajectory specified in eqn. (\ref{eqn:Trajectory_Accelerating}). On the other hand, $\Psi$ in eqn. (\ref{eqn:Psi_Accelerating}) is essentially a static field
+\begin{eqnarray}
+\Psi=\frac{\frac{2c^2}{a}}{\sqrt{\bar x_0^2+y_0^2+z_0^2}\sqrt{(\bar x_0+\frac{2c^2}{a})^2+y_0^2+z_0^2}}
+\end{eqnarray}
+moving along trajectory specified in eqn. (\ref{eqn:Trajectory_Accelerating}), i.e. the same trajectory of the point source, which $\Psi$ is bound to.
+
+Since advanced and retarded wave of Green's function propagate at the speed of light in all observing frame, they do not represent the bound field. Hence, Lienard-Wiechert potential, derived from Green's function, does not account for $\Psi$ in eqn. (\ref{eqn:Psi_Accelerating}).
+
+In summary, wave equation (\ref{eqn:Wave}) is appropriate only in inertial frame, enhanced wave equation is needed to compute field within an accelerating frame. Here, a generalized wave equation is presented to compute fields in frame moving at uniform acceleration $a$ along x axis. With the equivalence principle, the generalized wave equation can also be regarded as impact of gravity $\mathbf{g}$ on the wave. Other generalizations are needed for different metric. As a common requirement, all generalized equation shall reduce to the normal wave equation when the impact of acceleration vanishes as $a=0$.
+
+\begin{appendix}
+\section{Coordinate transformation\label{app:Coordinate_Transformation}}
+\begin{eqnarray}
+x_0+\frac{c^2}{a}=(x_a+\frac{c^2}{a})cosh(\frac{at}{c})\nonumber\\
+ct_0=(x_a+\frac{c^2}{a})sinh(\frac{at}{c})
+\label{app:eqn:coordinates0}
+\end{eqnarray}
+\begin{eqnarray}
+x_a+\frac{c^2}{a}=\sqrt{(x_0+\frac{c^2}{a})^2-(ct_0)^2}\nonumber\\
+t_a=\frac{c}{a}artanh(\frac{ct_0}{x_0+\frac{c^2}{a}})
+\label{app:eqn:coordinates1}
+\end{eqnarray}
+
+From equation (\ref{app:eqn:coordinates1}), one can have
+\begin{eqnarray}
+\frac{\partial \Psi}{\partial t_0}=\frac{\partial \Psi}{\partial x_a}\frac{-c^2t_0}{\sqrt{(x_0+\frac{c^2}{a})^2 - (ct_0)^2}} + \frac{\partial \Psi}{\partial t_a}\frac{c}{a}\frac{c(x_0+\frac{c^2}{a})}{(x_0+\frac{c^2}{a})^2-(ct_0)^2}
+\label{eqn:Partial_Psi}
+\end{eqnarray}
+
+\begin{eqnarray}
+\frac{\partial^2 \Psi}{\partial t_0^2}=&&\frac{\partial^2 \Psi}{\partial x_a^2}\frac{c^4t_0^2}{(x_0+\frac{c^2}{a})^2 - (ct_0)^2} + \frac{\partial^2 \Psi}{\partial x_a\partial t_a}\frac{c}{a}\frac{-c^2t_0c(x_0+\frac{c^2}{a})}{((x_0+\frac{c^2}{a})^2-(ct_0)^2)^{3/2}}\nonumber\\
+&& + \frac{\partial \Psi}{\partial x_a}(\frac{-c^2}{((x_0+\frac{c^2}{a})^2-(ct_0)^2)^{1/2}} + \frac{-c^4t_0^2}{((x_0+\frac{c^2}{a})^2-(ct_0)^2)^{3/2}})\nonumber\\
+&& + \frac{\partial^2 \Psi}{\partial t_a\partial x_a}\frac{c}{a}\frac{-c^2t_0c(x_0+\frac{c^2}{a})}{((x_0+\frac{c^2}{a})^2-(ct_0)^2)^{3/2}} + \frac{\partial^2 \Psi}{\partial t_a^2}(\frac{c}{a})^2(\frac{c(x_0+\frac{c^2}{a})}{(x_0+\frac{c^2}{a})^2-(ct_0)^2})^2\nonumber\\
+&&+\frac{\partial \Psi}{\partial t_a}\frac{c}{a}\frac{c(x_0+\frac{c^2}{a})2c^2t_0}{((x_0+\frac{c^2}{a})^2-(ct_0)^2)^2}\nonumber\\
+=&&\frac{\partial^2 \Psi}{\partial x_a^2}\frac{c^4t_0^2}{(x_0+\frac{c^2}{a})^2 - (ct_0)^2} + \frac{\partial^2 \Psi}{\partial x_a\partial t_a}\frac{c^2}{a}\frac{-2c^2t_0(x_0+\frac{c^2}{a})}{((x_0+\frac{c^2}{a})^2-(ct_0)^2)^{3/2}}\nonumber\\
+&& + \frac{\partial \Psi}{\partial x_a}\frac{-c^2(x_0+\frac{c^2}{a})^2}{((x_0+\frac{c^2}{a})^2-(ct_0)^2)^{3/2}} + \frac{\partial^2 \Psi}{\partial t_a^2}(\frac{c}{a})^2(\frac{c(x_0+\frac{c^2}{a})}{(x_0+\frac{c^2}{a})^2-(ct_0)^2})^2\nonumber\\
+&& + \frac{\partial \Psi}{\partial t_a}\frac{c^2}{a}\frac{2(x_0+\frac{c^2}{a})c^2t_0}{((x_0+\frac{c^2}{a})^2-(ct_0)^2)^2}
+\label{app:eqn:Partial2_Psi_Partial_t2}
+\end{eqnarray}
+
+\begin{eqnarray}
+\frac{\partial \Psi}{\partial x_0} = \frac{\partial \Psi}{\partial x_a}\frac{x_0+\frac{c^2}{a}}{\sqrt{(x_0+\frac{c^2}{a})^2-(ct_0)^2}} + \frac{\partial \Psi}{\partial t_a}\frac{c}{a}\frac{-ct_0}{(x_0+\frac{c^2}{a})^2-(ct_0)^2}
+\label{eqn:Partial_Psi_Partial_x}
+\end{eqnarray}
+
+\begin{eqnarray}
+\frac{\partial^2 \Psi}{\partial x_0^2} =&& \frac{\partial^2 \Psi}{\partial x_a^2}\frac{(x_0+\frac{c^2}{a})^2}{(x_0+\frac{c^2}{a})^2-(ct_0)^2} + \frac{\partial^2 \Psi}{\partial x_a\partial t_a}\frac{c}{a}\frac{-ct_0(x_0+\frac{c^2}{a})}{((x_0+\frac{c^2}{a})^2-(ct_0)^2)^{3/2}}\nonumber\\
+&& + \frac{\partial \Psi}{\partial x_a}(\frac{1}{((x_0+\frac{c^2}{a})^2-(ct_0)^2)^{1/2}} + \frac{-(x_0+\frac{c^2}{a})^2}{((x_0+\frac{c^2}{a})^2-(ct_0)^2)^{3/2}})\nonumber\\
+&& + \frac{\partial^2 \Psi}{\partial t_a\partial x_a}\frac{c}{a}\frac{-ct_0(x_0+\frac{c^2}{a})}{((x_0+\frac{c^2}{a})^2-(ct_0)^2)^{3/2}} + \frac{\partial^2 \Psi}{\partial t_a^2}\frac{c^2}{a^2}\frac{c^2t_0^2}{((x_0+\frac{c^2}{a})^2-(ct_0)^2)^2}\nonumber\\
+&& + \frac{\partial \Psi}{\partial t_a}\frac{c}{a}\frac{ct_02(x_0+\frac{c^2}{a})}{((x_0+\frac{c^2}{a})^2-(ct_0)^2)^2}\nonumber\\
+=&& \frac{\partial^2 \Psi}{\partial x_a^2}\frac{(x_0+\frac{c^2}{a})^2}{(x_0+\frac{c^2}{a})^2-(ct_0)^2} + \frac{\partial^2 \Psi}{\partial x_a\partial t_a}\frac{c^2}{a}\frac{-2t_0(x_0+\frac{c^2}{a})}{((x_0+\frac{c^2}{a})^2-(ct_0)^2)^{3/2}}\nonumber\\
+&& + \frac{\partial \Psi}{\partial x_a}(\frac{1}{((x_0+\frac{c^2}{a})^2-(ct_0)^2)^{1/2}} + \frac{-(x_0+\frac{c^2}{a})^2}{((x_0+\frac{c^2}{a})^2-(ct_0)^2)^{3/2}})\nonumber\\
+&& + \frac{\partial^2 \Psi}{\partial t_a^2}\frac{c^2}{a^2}\frac{c^2t_0^2}{((x_0+\frac{c^2}{a})^2-(ct_0)^2)^2} + \frac{\partial \Psi}{\partial t_a}\frac{c^2}{a}\frac{2t_0(x_0+\frac{c^2}{a})}{((x_0+\frac{c^2}{a})^2-(ct_0)^2)^2}
+\label{app:eqn:Partial2_Psi_Partial_x2}
+\end{eqnarray}
+
+\section{Static charge in uniformly accelerating frame\label{app:Psi_Static}}
+\begin{eqnarray}
+h(x_a,y_a,z_a)&&=\frac{1}{\sqrt{x_a^2 + y_a^2 + z_a^2}}\nonumber\\
+g(x_a,y_a,z_a)&&=\frac{2c^2}{a}\frac{1}{\sqrt{(x_a+\frac{2c^2}{a})^2+y_a^2+z_a^2}}\nonumber\\
+\Psi(x_a,y_a,z_a)&&=hg=\frac{2c^2}{a}\frac{1}{\sqrt{x_a^2 + y_a^2 + z_a^2}}\frac{1}{\sqrt{(x_a+\frac{2c^2}{a})^2+y_a^2+z_a^2}}
+\end{eqnarray}
+\begin{eqnarray}
+\nabla^2\Psi=&&\frac{\partial^2 \Psi}{\partial x_a^2}+\frac{\partial^2 \Psi}{\partial y_a^2}+\frac{\partial^2 \Psi}{\partial z_a^2} = h\nabla^2 g + g\nabla^2 h + 2\nabla h\cdot\nabla g\nonumber\\
+=&&\frac{2c^2}{a}h\delta(x_a+\frac{2c^2}{a},y_a,z_a) + g\delta(x_a,y_a,z_a)\nonumber\\
+&&+ 2\frac{2c^2}{a}\frac{x_a(x_a+\frac{2c^2}{a})+y_a^2+z_a^2}{(x_a^2+y_a^2+z_a^2)^{\frac{3}{2}}((x_a+\frac{2c^2}{a})^2+y_a^2+z_a^2)^{\frac{3}{2}}}
+\end{eqnarray}
+\begin{eqnarray}
+\frac{\partial\Psi}{\partial x_a}=&&h\frac{\partial g}{\partial x_a}+g\frac{\partial h}{\partial x_a}\nonumber\\
+=&&-\frac{2c^2}{a}(x_a+\frac{2c^2}{a})((x_a+\frac{2c^2}{a})^2+y_a^2+z_a^2)^{(-\frac{3}{2})}(x_a^2+y_a^2+z_a^2)^{-\frac{1}{2}}\nonumber\\
+&&-\frac{2c^2}{a}x_a(x_a^2+y_a^2+z_a^2)^{-\frac{3}{2}}((x_a+\frac{2c^2}{a})^2+y_a^2+z_a^2)^{-\frac{1}{2}}\nonumber\\
+=&&-\frac{2c^2}{a}\frac{(x_a+\frac{2c^2}{a})(x_a^2+y_a^2+z_a^2)+x_a((x_a+\frac{2c^2}{a})^2+y_a^2+z_a^2)}{(x_a^2+y_a^2+z_a^2)^{\frac{3}{2}}((x_a+\frac{2c^2}{a})^2 + y_a^2+z_a^2)^{\frac{3}{2}}}\nonumber\\
+=&&-\frac{2c^2}{a}\frac{2x_a(x_a+\frac{c^2}{a})(x_a+\frac{2c^2}{a}) + 2(x_a+\frac{c^2}{a})y_a^2 + 2(x_a+\frac{c^2}{a})z_a^2}{(x_a^2+y_a^2+z_a^2)^{\frac{3}{2}}((x_a+\frac{2c^2}{a})^2 + y_a^2+z_a^2)^{\frac{3}{2}}}
+\end{eqnarray}
+Then
+\begin{eqnarray}
+\nabla^2\Psi + \frac{1}{x_a+\frac{c^2}{a}}\frac{\partial\Psi}{\partial x_a} = \frac{2c^2}{a}h\delta(x_a+\frac{2c^2}{a},y_a,z_a) + g\delta(x_a,y_a,z_a)\nonumber\\
+=\delta(x_a,y_a,z_a)+\delta(x_a+\frac{2c^2}{a},y_a,z_a)
+\end{eqnarray}
+
+\section{Field of freely falling charge\label{app:Psi_Free_Fall}}
+\begin{eqnarray}
+\Psi=\frac{1}{\sqrt{((x_a+\frac{c^2}{a})cosh(\frac{at_a}{c})-\frac{c^2}{a})^2+y_a^2+z_a^2}}
+\label{app:eqn:Psi_Free_Fall}
+\end{eqnarray}
+\begin{eqnarray}
+\frac{\partial \Psi}{\partial x_a}=\frac{-((x_a+\frac{c^2}{a})cosh(\frac{at_a}{c})-\frac{c^2}{a})cosh(\frac{at_a}{c})}{(((x_a+\frac{c^2}{a})cosh(\frac{at_a}{c})-\frac{c^2}{a})^2+y_a^2+z_a^2)^{3/2}}
+\end{eqnarray}
+\begin{eqnarray}
+\frac{\partial^2 \Psi}{\partial x_a^2}=&&\frac{-cosh^2(\frac{at_a}{c})}{(((x_a+\frac{c^2}{a})cosh(\frac{at_a}{c})-\frac{c^2}{a})^2+y_a^2+z_a^2)^{3/2}}\nonumber\\
+&&+\frac{3((x_a+\frac{c^2}{a})cosh(\frac{at_a}{c})-\frac{c^2}{a})^2cosh^2(\frac{at_a}{c})}{(((x_a+\frac{c^2}{a})cosh(\frac{at_a}{c})-\frac{c^2}{a})^2+y_a^2+z_a^2)^{5/2}}\nonumber\\
+=&&\frac{(2((x_a+\frac{c^2}{a})cosh(\frac{at_a}{c})-\frac{c^2}{a})-y_a^2-z_a^2)^2cosh^2(\frac{at_a}{c})}{(((x_a+\frac{c^2}{a})cosh(\frac{at_a}{c})-\frac{c^2}{a})^2+y_a^2+z_a^2)^{5/2}}
+\end{eqnarray}
+\begin{eqnarray}
+\frac{\partial \Psi}{\partial t_a}=\frac{-((x_a+\frac{c^2}{a})cosh(\frac{at_a}{c})-\frac{c^2}{a})(x_a+\frac{c^2}{a})\frac{a}{c}sinh(\frac{at_a}{c})}{(((x_a+\frac{c^2}{a})cosh(\frac{at_a}{c})-\frac{c^2}{a})^2+y_a^2+z_a^2)^{3/2}}
+\end{eqnarray}
+\begin{eqnarray}
+\frac{\partial^2 \Psi}{\partial t_a^2}=&&\frac{-(x_a+\frac{c^2}{a})^2(\frac{a}{c})^2sinh^2(\frac{at_a}{c})}{(((x_a+\frac{c^2}{a})cosh(\frac{at_a}{c})-\frac{c^2}{a})^2+y_a^2+z_a^2)^{3/2}}\nonumber\\
+&&+\frac{-((x_a+\frac{c^2}{a})cosh(\frac{at_a}{c})-\frac{c^2}{a})(x_a+\frac{c^2}{a})(\frac{a}{c})^2cosh(\frac{at_a}{c})}{(((x_a+\frac{c^2}{a})cosh(\frac{at_a}{c})-\frac{c^2}{a})^2+y_a^2+z_a^2)^{3/2}}\nonumber\\
+&&+\frac{3((x_a+\frac{c^2}{a})cosh(\frac{at_a}{c})-\frac{c^2}{a})^2(x_a+\frac{c^2}{a})^2(\frac{a}{c})^2sinh^2(\frac{at_a}{c})}{(((x_a+\frac{c^2}{a})cosh(\frac{at_a}{c})-\frac{c^2}{a})^2+y_a^2+z_a^2)^{5/2}}\nonumber\\
+=&&\frac{-((x_a+\frac{c^2}{a})cosh(\frac{at_a}{c})-\frac{c^2}{a})(x_a+\frac{c^2}{a})(\frac{a}{c})^2cosh(\frac{at_a}{c})}{(((x_a+\frac{c^2}{a})cosh(\frac{at_a}{c})-\frac{c^2}{a})^2+y_a^2+z_a^2)^{3/2}}\nonumber\\
+&&+\frac{(2((x_a+\frac{c^2}{a})cosh(\frac{at_a}{c})-\frac{c^2}{a})^2-y_a^2-z_a^2)(x_a+\frac{c^2}{a})^2(\frac{a}{c})^2sinh^2(\frac{at_a}{c})}{(((x_a+\frac{c^2}{a})cosh(\frac{at_a}{c})-\frac{c^2}{a})^2+y_a^2+z_a^2)^{5/2}}
+\end{eqnarray}
+\begin{eqnarray}
+\frac{\partial^2 \Psi}{\partial x_a^2} + \frac{1}{x_a+\frac{c^2}{a}}\frac{\partial \Psi}{\partial x_a} + \frac{\partial^2 \Psi}{\partial y_a^2} + \frac{\partial^2 \Psi}{\partial z_a^2} - \frac{c^2}{a^2(x_a+\frac{c^2}{a})^2}\frac{\partial^2 \Psi}{\partial t_a^2}\nonumber\\
+=\frac{(2((x_a+\frac{c^2}{a})cosh(\frac{at_a}{c})-\frac{c^2}{a})^2-y_a^2-z_a^2)}{(((x_a+\frac{c^2}{a})cosh(\frac{at_a}{c})-\frac{c^2}{a})^2+y_a^2+z_a^2)^{5/2}}\nonumber\\
++\frac{(2y_a^2-((x_a+\frac{c^2}{a})cosh(\frac{at_a}{c})-\frac{c^2}{a})^2-z_a^2)}{(((x_a+\frac{c^2}{a})cosh(\frac{at_a}{c})-\frac{c^2}{a})^2+y_a^2+z_a^2)^{5/2}}\nonumber\\
++\frac{(2z_a^2-y_a^2-((x_a+\frac{c^2}{a})cosh(\frac{at_a}{c})-\frac{c^2}{a})^2)}{(((x_a+\frac{c^2}{a})cosh(\frac{at_a}{c})-\frac{c^2}{a})^2+y_a^2+z_a^2)^{5/2}}
+\label{app:eqn:Psi_In_WaveRindler}
+\end{eqnarray}
+
+Since
+\begin{eqnarray}
+\delta(\hat{x}_a,y_a,z_a)&&=(\frac{\partial^2}{\partial \hat{x}_a^2} + \frac{\partial^2}{\partial y_a^2} + \frac{\partial^2}{\partial z_a^2})\frac{1}{\sqrt{\hat{x}_a^2+y_a^2+z_a^2}}\nonumber\\
+&&=\frac{(2\hat{x}_a^2-y_a^2-z_a^2)}{(\hat{x}_a^2+y_a^2+z_a^2)^{5/2}} + \frac{(2y_a^2-\hat{x}_a^2-z_a^2)}{(\hat{x}_a^2+y_a^2+z_a^2)^{5/2}}
++\frac{(2z_a^2-y_a^2-\hat{x}_a^2)}{(\hat{x}_a^2+y_a^2+z_a^2)^{5/2}}
+\end{eqnarray}
+replacing $\hat{x}_a$ with $(x_a+\frac{c^2}{a})cosh(\frac{at_a}{c})-\frac{c^2}{a}$, equation (\ref{app:eqn:Psi_In_WaveRindler}) becomes
+\begin{eqnarray}
+\frac{\partial^2 \Psi}{\partial x_a^2} + \frac{1}{x_a+\frac{c^2}{a}}\frac{\partial \Psi}{\partial x_a} + \frac{\partial^2 \Psi}{\partial y_a^2} + \frac{\partial^2 \Psi}{\partial z_a^2} - \frac{c^2}{a^2(x_a+\frac{c^2}{a})^2}\frac{\partial^2 \Psi}{\partial t_a^2}\nonumber\\
+=\delta((x_a+\frac{c^2}{a})cosh(\frac{at_a}{c})-\frac{c^2}{a},y_a,z_a)
+\label{app:eqn:WaveRindler_Free_Fall}
+\end{eqnarray}
+
+Thus, (\ref{app:eqn:Psi_Free_Fall}) is the solution of (\ref{app:eqn:WaveRindler_Free_Fall}), the field of freely falling charge.
+
+\section{Uniformly accelerating charge\label{app:Psi_Accelerating}}
+\begin{eqnarray}
+w&&=\sqrt{(x_0+\frac{c^2}{a})^2-(ct_0)^2}\nonumber\\
+h&&=\frac{1}{\sqrt{(w-\frac{c^2}{a})^2 + y_0^2 + z_0^2}},\hspace{5mm}
+g=\frac{2c^2}{a}\frac{1}{\sqrt{(w+\frac{c^2}{a})^2+y_0^2+z_0^2}}\nonumber\\
+\Psi(x_0,y_0,z_0,t_0)&&=hg=\frac{2c^2}{a}\frac{1}{\sqrt{(w-\frac{c^2}{a})^2 + y_0^2 + z_0^2}}
+\frac{1}{\sqrt{(w+\frac{c^2}{a})^2+y_0^2+z_0^2}}
+\end{eqnarray}
+\begin{eqnarray}
+\nabla^2\Psi=&&\frac{\partial^2 \Psi}{\partial x_0^2}+\frac{\partial^2 \Psi}{\partial y_0^2}+\frac{\partial^2 \Psi}{\partial z_0^2} = h\nabla^2 g + g\nabla^2 h + 2\nabla h\cdot\nabla g\nonumber\\
+=&&h(\frac{\partial^2g}{\partial w^2}(\frac{\partial w}{\partial x_0})^2+\frac{\partial g}{\partial w}\frac{\partial^2 w}{\partial x_0^2}+\frac{\partial^2 g}{\partial y_0^2}+\frac{\partial^2 g}{\partial z_0^2}) + g(\frac{\partial^2h}{\partial w^2}(\frac{\partial w}{\partial x_0})^2+\frac{\partial h}{\partial w}\frac{\partial^2 w}{\partial x_0^2}+\frac{\partial^2 h}{\partial y_0^2}+\frac{\partial^2 h}{\partial z_0^2})\nonumber\\
+&&+ 2((\frac{\partial w}{\partial x_0})^2\frac{\partial h}{\partial w}\frac{\partial g}{\partial w}+\frac{\partial h}{\partial y_0}\frac{\partial g}{\partial y_0}+\frac{\partial h}{\partial z_0}\frac{\partial g}{\partial z_0})
+\end{eqnarray}
+\begin{eqnarray}
+\frac{\partial^2\Psi}{\partial t_0^2}=&&h\frac{\partial^2 g}{\partial t_0^2}+g\frac{\partial^2 h}{\partial t_0^2}+2\frac{\partial h}{\partial t_0}\frac{\partial g}{\partial t_0}\nonumber\\
+=&&h(\frac{\partial^2 g}{\partial w^2}(\frac{\partial w}{\partial t_0})^2+\frac{\partial g}{\partial w}\frac{\partial^2 w}{\partial t_0^2}) + g(\frac{\partial^2 h}{\partial w^2}(\frac{\partial w}{\partial t_0})^2+\frac{\partial h}{\partial w}\frac{\partial^2 w}{\partial t_0^2})+2\frac{\partial h}{\partial w}\frac{\partial g}{\partial w}(\frac{\partial w}{\partial t_0})^2
+\end{eqnarray}
+then
+\begin{eqnarray}
+&&\nabla^2\Psi - \frac{1}{c^2}\frac{\partial^2\Psi}{\partial t_0} = h(\frac{\partial^2 g}{\partial w^2}((\frac{\partial w}{\partial x_0})^2-\frac{1}{c^2}(\frac{\partial w}{\partial t_0})^2)+\frac{\partial^2 g}{\partial y_0^2}+\frac{\partial^2 g}{\partial z_0^2})+h\frac{\partial g}{\partial w}(\frac{\partial^2 w}{\partial x_0^2}-\frac{1}{c^2}\frac{\partial^2 w}{\partial t_0^2})\nonumber\\
+&&\hspace{5mm}+g(\frac{\partial^2 h}{\partial w^2}((\frac{\partial w}{\partial x_0})^2-\frac{1}{c^2}(\frac{\partial w}{\partial t_0})^2)+\frac{\partial^2 h}{\partial y_0^2}+\frac{\partial^2 h}{\partial z_0^2})+g\frac{\partial h}{\partial w}(\frac{\partial^2 w}{\partial x_0^2}-\frac{1}{c^2}\frac{\partial^2 w}{\partial t_0^2})\nonumber\\
+&&\hspace{5mm}+ 2((\frac{\partial w}{\partial x_0})^2\frac{\partial h}{\partial w}\frac{\partial g}{\partial w}+\frac{\partial h}{\partial y_0}\frac{\partial g}{\partial y_0}+\frac{\partial h}{\partial z_0}\frac{\partial g}{\partial z_0})-2\frac{1}{c^2}(\frac{\partial w}{\partial t_0})^2\frac{\partial h}{\partial w}\frac{\partial g}{\partial w}
+\end{eqnarray}
+with
+\begin{eqnarray}
+\frac{\partial^2 w}{\partial x_0^2}-\frac{1}{c^2}\frac{\partial^2 w}{\partial t_0^2}=\frac{1}{w},\hspace{5mm}
+(\frac{\partial w}{\partial x_0})^2-\frac{1}{c^2}(\frac{\partial w}{\partial t_0})^2=1
+\end{eqnarray}
+\begin{eqnarray}
+&&\nabla^2\Psi - \frac{1}{c^2}\frac{\partial^2\Psi}{\partial t_0} = h(\frac{\partial^2 g}{\partial w^2}+\frac{\partial^2 g}{\partial y_0^2}+\frac{\partial^2 g}{\partial z_0^2})+g(\frac{\partial^2 h}{\partial w^2}+\frac{\partial^2 h}{\partial y_0^2}+\frac{\partial^2 h}{\partial z_0^2})\nonumber\\
+&&\hspace{30mm}+h\frac{\partial g}{\partial w}\frac{1}{w}+g\frac{\partial h}{\partial w}\frac{1}{w} + 2(\frac{\partial h}{\partial w}\frac{\partial g}{\partial w}+\frac{\partial h}{\partial y_0}\frac{\partial g}{\partial y_0}+\frac{\partial h}{\partial z_0}\frac{\partial g}{\partial z_0})\nonumber\\
+&&=h(\frac{\partial^2 g}{\partial w^2}+\frac{\partial^2 g}{\partial y_0^2}+\frac{\partial^2 g}{\partial z_0^2})+g(\frac{\partial^2 h}{\partial w^2}+\frac{\partial^2 h}{\partial y_0^2}+\frac{\partial^2 h}{\partial z_0^2})\nonumber\\
+&&=h\delta(w+\frac{c^2}{a},y_0,z_0)+g\delta(w-\frac{c^2}{a},y_0,z_0)\\
+&&=\delta(\sqrt{(x_0+\frac{c^2}{a})^2-(ct_0)^2}+\frac{c^2}{a},y_0,z_0) + \delta(\sqrt{(x_0+\frac{c^2}{a})^2-(ct_0)^2}-\frac{c^2}{a},y_0,z_0)\nonumber
+\end{eqnarray}
+\end{appendix}
+%\begin{acknowledgments}
+%I am grateful to my family for their support and encouragement.
+%\end{acknowledgments}
+
+\begin{thebibliography}{}
+\label{sec:TeXbooks}
+\bibitem{Jackson} J. D. Jackson, Classical Electrodynamics, 3rd ed., (Wiley, New York, 1998).
+\bibitem{Dirac} P. A. M. Dirac, Proc. R. Soc. A 167, 148 (1938).
+\bibitem{Landau} L. D. Landau and E. M. Lifshitz, The Classical Theory of Fields (Pergamon, Oxford, 1962).
+\bibitem{DeWitt} B. S. DeWitt and R. W. Brehme, Ann. Phys. 9, 220 (1960)
+\bibitem{Mino} Y. Mino, M. Sasaki and T. Tanaka, Phys. Rev. D 55, 3457 (1997)
+\bibitem{Quinn} T. C. Quinn and R. M. Wald, Phys. Rev. D 56, 3381 (1997)
+\bibitem{Barack} L. Barack and A. Ori, Phys. Rev. D 61, 061502(R) (2000)
+\bibitem{Detweiler} S. Detweiler and B. F. Whiting, Phys. Rev. D 67, 024025 (2003)
+\bibitem{Wiseman} A. G. Wiseman, Phys. Rev. D 61, 084014 (2000)
+\bibitem{Quinn1} T. C. Quinn, Phys. Rev. D 62, 064029 (2000)
+\bibitem{Pfenning} M. J. Pfenning and E. Poisson, Phys. Rev. D 65, 084001 (2002)
+\bibitem{Haas} R. Haas and E. Poisson, Class. Quantum Grav. 22, S739 (2005)
+\bibitem{Drasco} S. Drasco, Class. Quantum Grav. 23, S769 (2006)
+\bibitem{Haas1} R. Haas, Phys. Rev. D 75, 124011 (2007)
+\bibitem{Shankar} K. Shankar and B. F. Whiting, Phys. Rev. D 76, 124027 (2007)
+\bibitem{Pound} A. Pound and E. Poisson, Phys. Rev. D 77, 044013 (2008)
+\end{thebibliography}
+\end{document}
